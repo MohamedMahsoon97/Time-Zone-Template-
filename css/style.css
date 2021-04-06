@@ -487,7 +487,7 @@ body
     color: #ff2020;
     padding-top: 20px;
 }
-@media (max-width: 1025px) {
+@media (max-width:991px) and (max-width: 1025px) {
     .Arrival
     {
         width: 100%;
@@ -532,6 +532,12 @@ body
         display: flex;
         flex-direction: column;
     }
+    .Arrival .Arrival-content > div
+    {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 }
 
 /* -------------------------- End New Arrival section --------------------------------- */
@@ -540,7 +546,7 @@ body
 /* -------------------------- Start photos section --------------------------------- */
 .photos
 {
-    margin-top: 50px;
+    margin-top: 80px;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     grid-template-rows: repeat(2, 400px);
@@ -554,7 +560,6 @@ body
 {
     width: 100%;
     height: 100%;
-    background-size: cover;
     object-fit: cover;
     transform: scale(1.1);
     -webkit-transform: scale(1.1);
@@ -694,12 +699,14 @@ body
 }
 .popular .popular-text
 {
+    width: 45%;
     color: #777;
     font-size: 16px;
     line-height: 30px;
     margin-bottom: 15px;
     font-weight: normal;
     text-align: center;
+    margin: 20px auto;
 }
 .popular .popular-box
 {
