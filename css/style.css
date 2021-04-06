@@ -8,7 +8,8 @@
 body
 {
     font-family: 'Josefin Sans', sans-serif;
-    height: ;
+    height: 2500;
+    overflow-x: hidden;
 }
 .navbar
 {
@@ -353,7 +354,6 @@ body
 {
     color: #fff;
     text-decoration: none;
-    padding: ;
 }
 /* --------------------------  End select section   -------------------------- */
 
@@ -370,7 +370,6 @@ body
     .Select .select-content
     {
         width: 100%;
-        height: ;
     }
     .Select .select-content .select-headline
     {
@@ -463,6 +462,7 @@ body
 }
 .Arrival .Arrival-content > div .arrival-img img
 {
+    object-fit: cover;
     transition: 1s all;
     -webkit-transition: 1s all;
     -moz-transition: 1s all;
@@ -501,14 +501,18 @@ body
     }
     .Arrival .Arrival-content
     {
+        width: 100%;
         display: flex;
-        flex-direction: column;
+        flex-flow: row wrap;
+    }
+    .Arrival .Arrival-content > div
+    {
+        width: 44%;
     }
     .Arrival .Arrival-content > div .arrival-img
     {
         width: 100%;
-        display: flex;
-        flex-flow: row wrap;
+        
     }
 }
 @media (max-width: 767px) {
@@ -551,6 +555,7 @@ body
     width: 100%;
     height: 100%;
     background-size: cover;
+    object-fit: cover;
     transform: scale(1.1);
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
@@ -564,11 +569,13 @@ body
 }
 .photos > div img:hover
 {
+    filter: grayscale(100%);
     transform: scale(1);
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     -ms-transform: scale(1);
     -o-transform: scale(1);
+    -webkit-filter: grayscale(100%);
 }
 .photos > div:nth-child(1)
 {
@@ -599,10 +606,13 @@ body
     {
         display: flex;
         flex-flow: row wrap;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
     .photos > div
     {
-        width: 50%;
+        width: 48%;
     }
     .photos > div img
     {
@@ -610,12 +620,12 @@ body
     }
     .photos > div:nth-child(1)
     {
-        width: 50%;
+
         height: 550px;
     }
     .photos > div:nth-child(2)
     {
-        width: 50%;
+        
         height: 550px;
     }
     .photos > div:nth-child(3)
@@ -632,6 +642,10 @@ body
     {
         display: flex;
         flex-flow: column wrap;
+        height: 1300px;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;;
     }
     .photos > div
     {
@@ -648,6 +662,7 @@ body
     .photos > div:nth-child(2)
     {
         height: 300px;
+        margin-top: -70px;
     }
     .photos > div:nth-child(3)
     {
@@ -659,3 +674,183 @@ body
     }
 }
 /* -------------------------- End media query photos section --------------------------------- */
+
+
+
+/* ---------------------------   Start Popular section   -------------------------- */
+.popular
+{
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+.popular .popular-headline
+{
+    color: #000;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    padding-top: 30px;
+}
+.popular .popular-text
+{
+    color: #777;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    font-weight: normal;
+    text-align: center;
+}
+.popular .popular-box
+{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-flow: row wrap;
+    width: 80%;
+    margin-left: 10%;
+}
+.popular .popular-item
+{
+    overflow: hidden;
+    width: 30%;
+    padding-bottom: 40px;
+    position: relative;
+}
+.popular  .popular-item .item {
+    border-bottom: 4px solid #ff2200;
+    overflow: hidden;
+}
+.popular  .popular-item .item img{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.popular .popular-box .popular-item .content
+{
+    margin-top: 30px;
+    text-align: center;
+}
+.popular .popular-box .popular-item .content h3
+{
+    color: #0b1c39;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: 500;
+}
+.popular .popular-box .popular-item .content span
+{
+    color: #444444;
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+}
+.popular .popular-box .popular-item .overlay
+{
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+    background-color: #ff003c;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    bottom: 127px;
+    transition: all .4s ease-out;
+    -webkit-transition: all .4s ease-out;
+    -moz-transition: all .4s ease-out;
+    -ms-transition: all .4s ease-out;
+    -o-transition: all .4s ease-out;
+}
+.popular .popular-box .popular-item:hover .overlay
+{
+    padding: 25px;
+    opacity: 1;
+}
+.popular .popular-ptn
+{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 70px;
+    color: #fff;
+    background-color: #ff003c;
+    padding: 30px;
+}
+.popular .popular-box .popular-btn .btn
+{
+    position: relative;
+    width: 250px;
+    margin-top: 70px;
+    padding: 22px 22px;
+    background-color: gray;
+    color: #fff;
+    border: none;
+    z-index: 1;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.03em
+}
+.popular .popular-box .popular-btn .btn:hover::before
+{
+    width: 100%;
+}
+.popular .popular-box .popular-btn .btn::before
+{
+    content: "";
+    width: 0%;
+    height: 100%;
+    background-color: #ff2020;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    transition: .5s all;
+    -webkit-transition: .5s all;
+    -moz-transition: .5s all;
+    -ms-transition: .5s all;
+    -o-transition: .5s all;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+/* ---------------------------   End Popular section   -------------------------- */
+
+/* ---------------------------   Start media query Popular section   -------------------------- */
+@media (max-width:767px) {
+    .popular .popular-headline
+    {
+        width: 80%;
+        font-size: 30px;
+        margin-top: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .popular .popular-text
+    {
+        width: 80%;
+        font-size: 18px;
+        margin-top: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .popular .popular-box
+    {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        flex-flow: column wrap;
+    }
+    .popular .popular-item
+    {
+        width: 100%;
+    }
+    .popular .popular-box .popular-btn .btn
+    {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 18px;
+        padding: 25px 14px;
+    }
+}
+/* ---------------------------   End media query Popular section   -------------------------- */
