@@ -4,11 +4,11 @@
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 body
 {
     font-family: 'Josefin Sans', sans-serif;
-    height: 2500;
     overflow-x: hidden;
 }
 .navbar
@@ -423,7 +423,7 @@ body
         color: #212025;
         padding-right: 50px;
     }
-    ..Select .select-content .select-btn
+    .Select .select-content .select-btn
     {
     
     }
@@ -487,7 +487,38 @@ body
     color: #ff2020;
     padding-top: 20px;
 }
-@media (max-width:991px) and (max-width: 1025px) {
+/* -------------------------- End New Arrival section ------------------------------- */
+
+/* -------------------------- Start media query New Arrival section ------------------------------- */
+@media (max-width:1100px) {
+    .Arrival
+    {
+        width: 100%;
+    }
+    .Arrival .headline
+    {
+        width: 100%;
+        padding-left: 0px;
+        text-align: center;
+        font-size: 35px;
+    }
+    .Arrival .Arrival-content
+    {
+        width: 100%;
+        display: flex;
+        /* flex-flow: row wrap; */
+    }
+    .Arrival .Arrival-content > div
+    {
+        width: 30%;
+    }
+    .Arrival .Arrival-content > div .arrival-img
+    {
+        width: 100%;
+        
+    }
+}
+@media (max-width:991px) {
     .Arrival
     {
         width: 100%;
@@ -540,7 +571,7 @@ body
     }
 }
 
-/* -------------------------- End New Arrival section --------------------------------- */
+/* -------------------------- End media query New Arrival section --------------------------------- */
 
 
 /* -------------------------- Start photos section --------------------------------- */
@@ -861,3 +892,624 @@ body
     }
 }
 /* ---------------------------   End media query Popular section   -------------------------- */
+
+/* -----------------------   Start video section   ------------------------- */
+.bg-video
+{
+    background-image: url('../images/sectin_bg1.png');
+    /* background-size: cover; */
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 600px;
+}
+/* .bg-video::before
+{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(146 133 133 / 42%);
+} */
+.bg-video .video
+{
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    -webkit-transform: translate(-50% , -50%);
+    -moz-transform: translate(-50% , -50%);
+    -ms-transform: translate(-50% , -50%);
+    -o-transform: translate(-50% , -50%);
+}
+.bg-video .video a
+{
+    display: inline-block;
+    border: 2px solid #fff;
+    padding: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+.bg-video:hover .video a
+{
+    transform: scale(1.07);
+    -webkit-transform: scale(1.07);
+    -moz-transform: scale(1.07);
+    -ms-transform: scale(1.07);
+    -o-transform: scale(1.07);
+}
+.bg-video .video a:hover
+{
+    
+    background-color: #fff;
+    color: red;
+}
+.bg-video .video a:hover i
+{
+    
+    color: red;
+}
+.bg-video .video a i
+{
+    font-size: 24px;
+    color: #fff;
+}
+.bg-video .next-video
+{
+    z-index: 100;
+    width: 32%;
+    padding: 70px 30px;
+    background-image: url(../images/vidoe_more.png);
+    position: absolute;
+    bottom: 0px;
+    
+}
+.bg-video .next-video span
+{
+    color: #fff;
+    font-size: 24px;
+    padding-left: 30px;
+    padding-right: 200px;
+}
+.bg-video .next-video i
+{
+    color: #fff;
+}
+/* -----------------------   End video section   ------------------------- */
+
+/* ---------------------------   End media query video section   -------------------------- */
+@media (max-width:1100px) {
+    .bg-video{
+        width: 100%;
+        background-size: cover;
+    }
+    .bg-video .next-video
+    {
+        width: 50%;
+        padding: 35px 80px;
+    }
+    .bg-video .next-video span
+    {
+        padding-right: 180px;
+        padding-left: 20px;
+    }
+}
+@media (max-width:991px) {
+    .bg-video{
+        width: 100%;
+    }
+    .bg-video .next-video
+    {
+        width: 55%;
+        padding: 35px 80px;
+    }
+    .bg-video .next-video span
+    {
+        padding-right: 100px;
+        padding-left: 20px;
+    }
+}
+@media (max-width:767px) {
+    .bg-video{
+        width: 100%;
+    }
+    .bg-video .next-video
+    {
+        width: 70%;
+        padding: 35px 5px;
+    }
+    .bg-video .next-video span
+    {
+        padding-right: 70px;
+        padding-left: 20px;
+    }
+
+}
+/* ---------------------------   End media query video section   -------------------------- */
+
+/* -----------------------   Start watch section   ------------------------- */
+.watch
+{
+    margin: 100px 0px 0px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: center;
+    width: 80%;
+    margin-left: 10%;
+}
+.watch .watch-one
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.watch .watch-one .watch-content
+{
+    width: 48%;
+}
+.watch .watch-one .watch-content h2
+{
+    color: #000;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 30px;
+}
+.watch .watch-one .watch-content p
+{
+    color: #777;
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+.watch .watch-one .watch-content button
+{
+    position: relative;
+    width: 250px;
+    margin-top: 50px;
+    padding: 22px 22px;
+    background-color: #ff2020;
+    color: #fff;
+    border: none;
+    z-index: 1;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.03em
+}
+.watch .watch-one .watch-content button:hover::before
+{
+    width: 100%;
+}
+.watch .watch-one .watch-content button::before
+{
+    content: "";
+    width: 0%;
+    height: 100%;
+    background-color: #4a4a4b;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    transition: .5s all;
+    -webkit-transition: .5s all;
+    -moz-transition: .5s all;
+    -ms-transition: .5s all;
+    -o-transition: .5s all;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+.watch .watch-one .watch-img
+{
+    width: 45%;
+}
+.watch .watch-one .watch-img img
+{
+    width: 100%;
+}
+/* -----------------------   End watch section   ------------------------- */
+
+/* ---------------------------   Start media query Watch section   -------------------------- */
+@media (max-width:991px) {
+    .watch .watch-one .watch-content
+    {
+        width: 45%;
+        margin-bottom: 30px;
+    }
+    .watch .watch-one .watch-img
+    {
+        width: 45%;
+        margin-bottom: 30px;
+    }
+    .watch .watch-one .watch-content h2
+    {
+        font-size: 35px;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+    .watch .watch-one .watch-content p
+    {
+        margin-bottom: 0px;
+    }
+    .watch .watch-one .watch-content button
+    {
+        width: 200px;
+        margin-top: 20px;
+        font-size: 20px;
+        padding: 20px 10px;
+    }
+}
+@media (max-width:767px) {
+    .watch .watch-one .watch-content
+    {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .watch .watch-one .watch-img
+    {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .watch .watch-one .watch-content h2
+    {
+        font-size: 35px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .watch .watch-one .watch-content button
+    {
+        width: 200px;
+        font-size: 20px;
+        padding: 20px 10px;
+    }
+}
+/* ---------------------------   End media query Watch section   -------------------------- */
+
+/* -----------------------   Start shop section   ------------------------- */
+.shop
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    background-color: #ff2200;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 40px;
+}
+.shop .shop-item
+{
+    width: 28%;
+    padding: 50px 30px;
+    color: #fff;
+}
+.shop .shop-item i
+{
+    font-size: 40px;
+    color: #ffff;
+    margin-bottom: 25px;
+    display: block;
+}
+.shop .shop-item h6
+{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+.shop .shop-item p
+{
+    font-size: 16px;
+    line-height: 30px;
+    color: #d3d1d1;
+}
+
+/* -----------------------   End shop section   ------------------------- */
+
+/* ---------------------------   Start media query shop section   -------------------------- */
+@media (max-width:1100px) {
+    .shop
+    {
+        width: 90%;
+        flex-flow: row wrap;
+        margin-top: 0px;
+    }
+    .shop
+    {
+        width: 80%;
+    }
+    .shop .shop-item
+    {
+       width: 33%;
+       padding: 20px 40px;
+    }
+    .shop .shop-item h6
+    {
+       font-size: 16px;
+    }
+}
+@media (max-width:991px) {
+    .shop
+    {
+        width: 80%;
+        flex-flow: row wrap;
+        margin-top: 0px;
+    }
+    .shop .shop-item
+    {
+       width: 47%;
+       padding: 20px 40px;
+    }
+}
+@media (max-width:767px) {
+    .shop
+    {
+        width: 90%;
+        margin-left: 5%;
+        flex-flow: column wrap;
+        margin-top: 0px;
+    }
+    .shop .shop-item
+    {
+       width: 100%;
+       padding: 20px 40px;
+    }
+}
+/* ---------------------------   End media query shop section   -------------------------- */
+
+/* -----------------------   Start Footer section   ------------------------- */
+footer
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 80%;
+    margin-left: 10%;
+}
+footer .footer-item
+{
+    width: 23%;
+    margin-top: 50px;
+}
+footer .footer-item h4
+{
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+footer .footer-content
+{
+    width: 30%;
+    margin-top: 40px;
+}
+footer .footer-content p
+{
+    padding-top: 20px;
+    color: #868c98;
+    font-size: 16px;
+    margin-bottom: 50px;
+    line-height: 1.8;
+    width: 80%;
+}
+footer > div ul
+{
+    padding-top: 35px;
+}
+footer > div ul li
+{
+    list-style: none;
+    padding-bottom: 15px;
+}
+footer > div ul li a
+{
+    text-decoration: none;
+    color: #868c98;
+    font-weight: 400;
+}
+.copy
+{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    position: relative;
+}
+.copy .copy-text
+{
+    width: 60%;
+    color: #888888;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 2;
+    margin-bottom: 20px;
+    
+}
+.copy .copy-text p span
+{
+    color: #ff2200;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 2px solid #ff2200;
+    cursor: pointer;
+}
+.copy .social
+{
+    width: 40%;
+    padding-left: 200px;
+}
+.copy .social a
+{
+    padding-left: 20px;
+}
+/* -----------------------   End Footer section   ------------------------- */
+
+/* ---------------------------   Start media query footer section   -------------------------- */
+@media (max-width:1100px) {           /* Responsive to mobile screen like ipad pro - width=1024 */
+    .copy
+    {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .copy .copy-text
+    {
+        width: 50%;
+    }
+    .copy .copy-text p
+    {
+        font-size: 25px;
+        width: 100%;
+    }
+    .copy .copy-text p span
+    {
+        color: #ff2200;
+        font-size: 18px;
+        font-weight: bold;
+        border-bottom: 2px solid #ff2200;
+        cursor: pointer;
+    }
+    .copy .social
+    {
+        width: 50%;
+        padding: 30px 20px 10px 170px;
+    }
+    .copy .social a
+    {
+        padding-left: 15px;
+        font-size: 35px;
+    }
+}
+@media (max-width:991px) {           /* Responsive to mobile screen like ipad width=991px */
+    footer
+    {
+        width: 90%;
+        flex-flow: row wrap;
+    }
+    footer .footer-content
+    {
+        width: 90%;
+    }
+    footer .footer-item
+    {
+        width: 30%;
+        margin-top: 20px;
+        font-size: 15px;
+    }
+    .copy
+    {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .copy .copy-text
+    {
+        width: 50%;
+    }
+    .copy .copy-text p
+    {
+        font-size: 18px;
+        width: 100%;
+    }
+    .copy .copy-text p span
+    {
+        color: #ff2200;
+        font-size: 18px;
+        font-weight: bold;
+        border-bottom: 2px solid #ff2200;
+        cursor: pointer;
+    }
+    .copy .social
+    {
+        width: 50%;
+        padding: 30px 20px 10px 130px;
+    }
+    .copy .social a
+    {
+        padding-left: 15px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width:767px) {       /* Responsive to mobile screen like iphoneX - width=767px */
+    footer
+    {
+        width: 90%;
+        flex-flow: column wrap;
+    }
+    footer .footer-content
+    {
+        width: 90%;
+    }
+    footer .footer-item
+    {
+        width: 90%;
+        margin-top: 20px;
+    }
+    .copy
+    {
+        width: 80%;
+        margin-left: 20%;
+        padding: 10px 0px 40px 0px;
+        flex-flow: column wrap;
+        position: relative;
+    }
+    .copy .copy-text
+    {
+        width: 100%;
+        position: absolute;
+        left: -30px;
+    }
+    .copy .copy-text p
+    {
+        width: 100%;
+    }
+    .copy .copy-text p span
+    {
+        color: #ff2200;
+        font-size: 18px;
+        font-weight: bold;
+        border-bottom: 2px solid #ff2200;
+        cursor: pointer;
+    }
+    .copy .social
+    {
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        margin-bottom: 50px;
+        top: 115px;
+        left: -110px;
+    }
+    .copy .social a
+    {
+        display: inline-block;
+        margin: 0px;
+        padding: 0px;
+    }
+}
+/* ---------------------------   End media query footer section   -------------------------- */
