@@ -1362,6 +1362,10 @@ footer > div ul li a
 {
     padding-left: 20px;
 }
+.copy .social a i
+{
+    color: #4a4a4b;
+}
 /* -----------------------   End Footer section   ------------------------- */
 
 /* ---------------------------   Start media query footer section   -------------------------- */
